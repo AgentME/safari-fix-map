@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentME/safari-fix-map.git"
+  },
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "Public Domain",
   "devDependencies": {
