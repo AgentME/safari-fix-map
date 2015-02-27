@@ -22,7 +22,7 @@ function checkMap(map) {
 
 This module is for people who wish to seal Eldritch horrors securely away.
 
-# Recommended Usage
+## Recommended Usage
 
 You're using Browserify and NPM, right?
 
