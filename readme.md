@@ -13,7 +13,7 @@ code fail in Safari 8:
 ```javascript
 function checkMap(map) {
   map.forEach(function(value, key) {
-    if (!isNaN(value) && value !== map.get(key)) {
+    if (!Number.isNaN(value) && value !== map.get(key)) {
       throw new Error("world is insane at key "+key);
     }
   });
