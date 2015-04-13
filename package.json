@@ -1,6 +1,6 @@
 {
   "name": "safari-fix-map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple commonjs module to replace Safari's bugginess with better polyfills.",
   "main": "index.js",
   "scripts": {
