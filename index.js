@@ -9,7 +9,6 @@ if (
   // I haven't actually seen issues with Set, but I assume it's probably
   // implemented on top of Map so I'm playing it safe here.
 
-  var corejs = require('core-js/library');
-  window.Map = corejs.Map;
-  window.Set = corejs.Set;
+  window.Map = require('core-js/library/fn/map');
+  window.Set = require('core-js/library/fn/set');
 }
