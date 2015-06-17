@@ -1,3 +1,4 @@
+require('core-js/library'); // let core-js set up its hidden globals to not trigger mocha later.
 var assert = require('assert');
 var loader = require('./lib/loader')(require.resolve);
 
@@ -11,6 +12,9 @@ describe("safari-fix-map", function() {
     loader.run('../index');
     assert.equal(typeof window.Map, 'function');
     assert.equal(typeof window.Set, 'function');
+    var m = new window.Map();
+    m.set('a', 5);
+    assert.strictEqual(m.get('a'), 5);
   });
 
   it("approvingly nods at Chrome's Map", function() {
