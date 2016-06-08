@@ -1,4 +1,3 @@
-var _ = require("lodash");
 var assert = require("assert");
 
 module.exports = function(resolve) {
@@ -11,7 +10,7 @@ module.exports = function(resolve) {
 
       // check that the module was added to the cache where we expected it, so
       // that we can be sure that we removed it.
-      assert(_.has(require.cache, rname), 'check module in cache');
+      assert(Object.prototype.hasOwnProperty.call(require.cache, rname), 'check module in cache');
       delete require.cache[rname];
     }
   };

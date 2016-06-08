@@ -11,12 +11,11 @@
     "url": "https://github.com/AgentME/safari-fix-map.git"
   },
   "author": "Chris Cowan <agentme49@gmail.com>",
-  "license": "Public Domain",
+  "license": "MIT",
   "devDependencies": {
-    "lodash": "^3.3.1",
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "core-js": "^0.9.13"
+    "core-js": "^2.4.0"
   }
 }
